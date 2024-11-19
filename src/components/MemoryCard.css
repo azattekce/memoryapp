@@ -1,0 +1,88 @@
+.card img {
+    width: 100%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+.card {
+    position: relative;
+  
+}
+
+.card .cardFront {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+}
+
+.card .cardBack {
+    transform: rotateY(0deg);
+    transition: all ease-in 0.2s;
+}
+
+.rotated .cardFront {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+.rotated .cardBack {
+    transform: rotateY(90deg);
+    transition-delay: 0.2s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(130, 73%, 38%); /* Arka plan rengi */
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background: linear-gradient(145deg, #ffa726, #ffca28); /* Sarı-turuncu degrade */
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 3D görünüm için gölge */
+    cursor: pointer;
+    text-transform: uppercase; /* Büyük harfler */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background: linear-gradient(145deg, hsl(134, 100%, 58%), #bfe7c1); /* Hover olduğunda renklerin ters çevrilmesi */
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3); /* Hover olduğunda gölge derinleşir */
+  }
+  
+  .buttonSayac {
+    background: linear-gradient(145deg, #bd125f, #cb5399); /* Sarı-turuncu degrade */
+    border: none;
+    border-radius: 30px;
+    margin-top: 5px;
+    padding: 18px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(231, 237, 230);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 3D görünüm için gölge */
+    cursor: pointer;
+    text-transform:lowercase; /* Büyük harfler */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .buttonSayac:hover {
+    background: linear-gradient(145deg, #ffca28, #ffa726); /* Hover olduğunda renklerin ters çevrilmesi */
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3); /* Hover olduğunda gölge derinleşir */
+  }
+  
